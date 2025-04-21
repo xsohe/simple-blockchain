@@ -43,9 +43,9 @@ This is a simple blockchain implementation with a Flask web server.
 
 ## API Endpoints
 
-- `GET /blockchain` - Get the full blockchain
+## `GET /blockchain` - Get the full blockchain
 
-## Response
+### Response
 
 ```
 {
@@ -75,9 +75,9 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-- `GET /mine` - Mine a new block
+## `GET /mine` - For Mining a new block
 
-## Response
+### Response
 
 ```
 {
@@ -95,9 +95,9 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-- `POST /transactions/new` - Create a new transaction
+## `POST /transactions/new` - Create a new transaction
 
-## Raw Body
+### Raw Body
 
 ```
 {
@@ -107,7 +107,7 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-## Response
+### Response
 
 ```
 {
@@ -115,9 +115,9 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-- `POST /nodes/add_nodes` - Register new nodes
+## `POST /nodes/add_nodes` - Register new nodes
 
-## Raw Body add node for port 5000
+### 1. Raw Body add node for port 5000
 
 ```
 {
@@ -127,7 +127,7 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-## Raw Body add node for port 5001
+### 2. Raw Body add node for port 5001
 
 ```
 {
@@ -137,9 +137,9 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-- `GET /nodes/sync` - Synchronize with other nodes
+## `GET /nodes/sync` - Synchronize with other nodes
 
-## Response sync body from node 5000
+### Response sync body from node 5000
 
 ```
 {
@@ -200,7 +200,7 @@ This is a simple blockchain implementation with a Flask web server.
 }
 ```
 
-## Response sync body from node 5001
+### Response sync body from node 5001
 
 ```
 {
